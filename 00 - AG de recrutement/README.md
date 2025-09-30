@@ -11,4 +11,4 @@ Présentation de l'asso et des cours
 
 ## Lien Codingame
 
-  - [Rejoignez la partie ici!](https://www.codingame.com/clashofcode/clash/TODOTHISCODEHERE)
+  - [Rejoignez la partie ici!]([https://www.codingame.com/clashofcode/clash/TODOTHISCODEHERE](https://www.codingame.com/clashofcode/clash/4329993a5035421d23bc160d1bd0772d1657f54))
