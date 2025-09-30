@@ -11,4 +11,4 @@ Présentation de l'asso et des cours
 
 ## Lien Codingame
 
-  - [Rejoignez la partie ici!](https://www.codingame.com/clashofcode/clash/43300581dd793877b91fe66b7ac80d13174c640)
+  - [Rejoignez la partie ici!](https://www.codingame.com/clashofcode/clash/433007995c2d13a74ded61b5c1314823814a800)
