@@ -4,6 +4,7 @@
 <br/>
 
 [Contest link](https://vjudge.net/contest/757102#overview)
+Password: `123123123`
 
 ## Exercices
 
