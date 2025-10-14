@@ -1,6 +1,7 @@
 # Séance 2 - Complexité Algorithmique, Brute Force, Récursivité et Backtracking
 
-[Slides](Définition et exemples de la complexité algorithmique temporelle.pdf)<br/>
+[Slides](01-Computational-complexity-Brute-force,Recursivity,Backtracking.pdf)
+<br/>
 
 ## Exercices
 
