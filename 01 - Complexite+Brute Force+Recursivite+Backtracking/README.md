@@ -3,6 +3,8 @@
 [Slides](01-Computational-complexity-Brute-force,Recursivity,Backtracking.pdf)
 <br/>
 
+[Contest link](https://vjudge.net/contest/757102#overview)
+
 ## Exercices
 
 ## Complexité Algorithmique
