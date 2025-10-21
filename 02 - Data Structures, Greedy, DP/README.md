@@ -6,6 +6,8 @@ Cours sur les notions d'algorithmes gloutons (greedy) et de programmation dynami
 
 ## Exercices
 
+[Lien du concours](https://vjudge.net/contest/759202)
+
 ## Data structures
 
 ### Lvl 1
