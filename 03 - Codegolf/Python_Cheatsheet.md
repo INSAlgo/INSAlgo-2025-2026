@@ -1,5 +1,11 @@
+---
+marp: true
+---
+<!-- class: invert -->
+
 # Python Codegolf Cheatsheet
 
+---
 ## Conditions
 ### Inline conditions
 ```python
@@ -15,6 +21,7 @@ print(A if X else B)
 ```
 20 characters
 
+---
 ### AND conditions
 ```python
 if X and Y:
@@ -35,6 +42,7 @@ print([A,B][X&Y])
 ```
 17 characters!
 
+---
 ### Smart split
 You can leave the space out before an operator if it is preceded by a number
 ```python
@@ -47,6 +55,7 @@ print(X<5and Y<5)
 ```
 17 characters
 
+---
 ### Multiple comparisons
 ```python
 print(0<X and X<5)
@@ -69,7 +78,8 @@ print(X<5>Y)
 ```
 12 characters
 
-Why stop here??
+---
+But why stop here??
 ```python
 print(X>0and Z>0and Y<X)
 ```
@@ -80,7 +90,8 @@ print(Z>0<X>Y)
 ```
 14 characters!!
 
-### Multiple equalitie
+---
+### Multiple equalities
 You can use tuples to compare multiples values
 ```python
 print(X==5and Y==6 and Z==7)
@@ -95,6 +106,7 @@ print((X,Y,Z)==(5,6,7))
 
 ⚠️This does not save space for only two comparisons
 
+---
 ### Booleans
 In Python, booleans are also integers
 ```python
@@ -113,6 +125,7 @@ print([5,6][X])
 ```
 15 characters
 
+---
 ```python
 print(5+X)
 ```
@@ -129,6 +142,7 @@ print(6**X)
 ```
 11 characters
 
+---
 Of course, this is Python so it also works with strings!
 ```python
 print(['hello','world'][X])
@@ -140,6 +154,7 @@ print(X*'world'or'hello')
 ```
 25 characters
 
+---
 ### Evil string indexing
 The full slicing operator syntax is as follow:
 ```python
@@ -152,6 +167,8 @@ stop = -1
 step = 1
 ```
 The step value can be very useful!
+
+---
 ```python
 print(['YES','NO'][X])
 ```
@@ -173,6 +190,7 @@ print('hwfeoilrsllhod'[X::3])
 ```
 29 characters
 
+---
 ## Output
 
 ```python
@@ -187,10 +205,12 @@ print(*'AB',sep=', ')
 
 To list the alphabet letters
 ```python
-import string;string.ascii_lowercase
+import string
+print(string.ascii_lowercase)
 ```
-36 characters
+44 characters
 
+---
 ```python
 string=[chr(i+97)for i in range(26)]
 ```
@@ -206,6 +226,7 @@ string=map(chr,range(97,123))
 ```
 29 characters
 
+---
 ## Loops
 
 Simple inline loops:
@@ -221,6 +242,7 @@ a=[i for i in range(10)]
 ```
 24 characters
 
+---
 Always avoid nested loops!
 
 ```python
@@ -235,6 +257,7 @@ for a in range(X*Y):print(A//X,a%X)
 ```
 35 characters
 
+---
 You can even do it with three or more loops:
 ```python
 for i in range(5):
@@ -250,7 +273,8 @@ for k in range(5*6*7):
 ```
 56 characters
 
-If you loop less than 4 times:
+---
+And if you loop less than 4 times:
 ```python
 for a in range(4):func()
 ```
@@ -262,6 +286,7 @@ for a in 0,1,2,3:func()
 23 characters
 This is also useful when you need `step != 1`
 
+---
 If the value of `a` doesn't matter:
 ```python
 for a in range(10):func()
@@ -279,6 +304,7 @@ exec("foo();"*10)
 ```
 17 characters
 
+---
 ## Variables
 
 ### Functions
@@ -293,6 +319,7 @@ c=lambda a:a+1
 ```
 14 characters
 
+---
 ### Iterables unpacking
 Here you can replace `range(10)` with most iterables
 ```python
@@ -305,6 +332,7 @@ A=list(range(10))
 ```
 13 characters
 
+---
 Same thing with multiple variables:
 ```python
 l='abcdef'
@@ -319,6 +347,7 @@ A,_,B,*C='abcdef'
 ```
 17 characters
 
+---
 This is also useful for long function names:
 ```python
 a,b,c=input(),input(),input()
@@ -330,6 +359,7 @@ i=input;a,b,c=i(),i(),i()
 ```
 25 characters
 
+---
 Or with eval():
 ```python
 a,b,c,d,e=input(),input(),input(),input(),input()
@@ -341,6 +371,7 @@ a,b,c,d,e,_=eval("input(),"*5+'0')
 ```
 34 characters
 
+---
 ## Iterables
 
 ### Lists
@@ -367,7 +398,10 @@ _,*L=L #6 Chars
 L=L[:-1] #8 Chars
 L.pop() #7 Chars
 *L,_=L #6 Chars
+```
 
+---
+```python
 # Appending an item
 L.append(A) #11 Chars 
 L+=[A] #6 Chars
@@ -386,6 +420,7 @@ L=L.reverse() #13 Chars
 L=L[::-1] #9 Chars
 ```
 
+---
 A very elegant way to iterate on a list in reverse using bitwise operators:
 ```python
 L[::-1][A]
@@ -397,7 +432,7 @@ L[~A]
 ```
 5 characters
 
-
+---
 ### Conversion of iterable to list
 You might need this to call len() for example
 ```python
@@ -410,6 +445,7 @@ print(len([*A]))
 ```
 16 characters
 
+---
 ### Sets
 Python sets have operators very similar to the bitwise operators:
 
@@ -428,6 +464,7 @@ setA-=setB # Difference
 setA^=setB # Symmetric difference (XOR)
 ```
 
+---
 Here is how to check if an element is in a set:
 ```python
 var in setA
@@ -439,6 +476,7 @@ var in setA
 ```
 10 characters
 
+---
 ## Operators
 
 ### Bitwise operators
@@ -459,6 +497,7 @@ a or b
 a|b
 ```
 
+---
 ### Math operators
 ```python
 x=math.floor(A/B)
@@ -481,6 +520,8 @@ X=-(-A//B)
 ```
 10 characters
 
+---
+And for square root
 ```python
 X=math.sqrt(A)
 ```
@@ -490,6 +531,9 @@ X=math.sqrt(A)
 X=A**.5
 ```
 7 characters
+
+---
+There are many more techniques to use, just make sure to practice!
 
 # Sources
 https://www.codingame.com/blog/code-golf-python/
