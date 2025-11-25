@@ -1,6 +1,6 @@
 # Cours Libraries
 
-[Slides](Cours08-PythonLibraries.pdf)</br>
+[Slides](04 - Libraries, OOP.pdf)</br>
 Découverte et explications sur des librairies python utiles.
 
 ## Exercices
