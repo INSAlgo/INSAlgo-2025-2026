@@ -1,9 +1,12 @@
-# Cours Libraries
+# Introduction aux graphes
 
 [Slides](05 - Graphs, DFS, BFS, Dijkstra.pdf)</br>
 Présentation des graphes, leur representation en mémoire et quelques algorithmes de parcours de graphe et de calcul du plus court chemin.
 
 ## Exercices
+
+Virtual contest: https://vjudge.net/contest/769823
+Password is `insalgo`
 
 ## Graphs
 
